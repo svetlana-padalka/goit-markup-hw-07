@@ -13,19 +13,22 @@
   /* fill: #afb1b8; */
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    /* fill: #ffffff; */
+  }
 }
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--accent-color);
-  /* fill: #ffffff; */
-}
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  /* background-color: var(--accent-color); */
-  fill: #ffffff;
-}
+
 .social-list-icon {
   fill: #afb1b8;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social-list-link:hover &,
+  .social-list-link:focus & {
+    /* background-color: var(--accent-color); */
+    fill: #ffffff;
+  }
 }
