@@ -17,10 +17,10 @@
   align-items: center;
   /* margin-left: auto; */
 }
-.nav-list-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-right: 50px;
 }
-.contacts-list:not(:last-child) {
+.contacts__list:not(:last-child) {
   margin-right: 50px;
 }
 .header {
@@ -33,10 +33,10 @@
 
   background: var(--background-color);
 }
-.header-logo {
+.logo__header {
   color: var(--primary-black-color);
 }
-.nav-list-link {
+.nav-list__link {
   /* position: relative; */
   display: block;
   padding-top: 32px;
@@ -66,7 +66,7 @@
   bottom: 0;
   left: 0;
 }
-/* .nav-list-link::after {
+/* .nav-list__link::after {
   position: absolute;
   content: '';
   width: 100%;
@@ -76,8 +76,8 @@
   bottom: 0;
   left: 0;
 } */
-.contacts-mail,
-.contacts-phone {
+.contacts__mail,
+.contacts__phone {
   /* display: block; */
   display: flex;
   align-items: center;
@@ -98,26 +98,26 @@
   }
 }
 
-.contacts-mail-icon {
+.contacts__mail-icon {
   fill: var(--secondary-text-color);
   margin-right: 10px;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .contacts-mail:hover &,
-  .contacts-mail:focus & {
+  .contacts__mail:hover &,
+  .contacts__mail:focus & {
     fill: var(--accent-color);
   }
 }
 
-.contacts-phone-icon {
+.contacts__phone-icon {
   fill: var(--secondary-text-color);
   margin-right: 10px;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .contacts-phone:hover &,
-  .contacts-phone:focus & {
+  .contacts__phone:hover &,
+  .contacts__phone:focus & {
     fill: var(--accent-color);
   }
 }
